@@ -1,0 +1,44 @@
+/* CSSStyle for the webpage, Changes to body, headings, paragraphs, links, ID selectors, class selector */
+
+body {
+    background-color: #add7e6;
+    font-family: Arial, sans-serif;
+    color: #000000;
+}
+
+   h2, h3 {
+        font-family: 'Times New Roman', Times, serif;
+        color: red;
+    }
+p {
+    font-size: 20px;
+
+}
+li {
+    font-style: italic;
+}
+
+     a:link {
+        color: black;
+    }
+    a:visited {
+        color: blue;
+    }
+    a:hover {
+        background-color: white
+    }
+article {
+    margin-bottom: 50px;
+}
+*/This is my ID selector for the lab3 blog*/
+#lab3blog {
+    color: black;
+    font-style: oblique;
+    font-size: 20px;
+}
+*/ This is my class selector for the footer, I wanted to practice class selectors and pseudo class */
+.footer {
+    background-color: grey;
+    text-align: center;
+    font-size: 12px;
+}
