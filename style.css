@@ -1,21 +1,3 @@
-@media (max-width: 768px) {
-  .main-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .hero {
-    grid-template-columns: 1fr;
-  }
-
-  nav ul {
-    justify-content: flex-start;
-  }
-
-  main {
-    padding: 0 0.75rem;
-  }
-}
 :root {
   --bg: #0b1020;
   --bg-alt: #151a2b;
@@ -125,7 +107,6 @@ footer {
   border-top: 1px solid #2d3748;
 }
 
-/* Cards / sections */
 
 .section {
   background: rgba(15, 23, 42, 0.9);
@@ -156,8 +137,6 @@ footer {
   color: var(--muted);
   font-size: 0.9rem;
 }
-
-/* Fonting style */
 
 h1,
 h2,
@@ -190,8 +169,6 @@ a:hover {
   color: #9ae6b4;
 }
 
-/*Ordered and unordered lists */
-
 ul,
 ol {
   padding-left: 1.25rem;
@@ -213,7 +190,6 @@ ol {
   color: var(--accent);
 }
 
-/* Lab table properties */
 
 .table-wrapper {
   overflow-x: auto;
@@ -241,11 +217,10 @@ tbody tr:nth-child(even) {
   background: rgba(15, 23, 42, 0.7);
 }
 
-/* Gallery */
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fit);
   gap: 1rem;
 }
 
@@ -261,7 +236,6 @@ tbody tr:nth-child(even) {
   margin-bottom: 0.5rem;
 }
 
-/* Hero */
 
 .hero {
   display: grid;
@@ -286,7 +260,6 @@ tbody tr:nth-child(even) {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
 }
 
-/* Reflection */
 
 .reflection-block {
   border-left: 3px solid var(--accent-soft);
@@ -294,7 +267,6 @@ tbody tr:nth-child(even) {
   margin-bottom: 1rem;
 }
 
-/* Forms (for lab07 reuse) */
 
 form {
   display: grid;
@@ -337,5 +309,24 @@ input[type="submit"]:hover {
   background: var(--accent);
 }
 
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  nav ul {
+    justify-content: flex-start;
+  }
+
+  main {
+    padding: 0 0.75rem;
+  }
+  
+}
 
 
