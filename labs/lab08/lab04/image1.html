@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab 04 – Image 1-- (JPG)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebutton" onclick="closeNav()">&times;</a>
+
+  <div class="overlay-content">
+   <a href="../../../labs.html">Labs</a>
+    <a href="image1.html">Pg. Image 1</a> 
+    <a href="image2.html">Pg. Image 2</a> 
+    <a href="image3.html">Pg. Image 3</a>
+  </div>
+
+    </div>
+<span class="navigationStart" onclick="openNav()">&#9776; Navigation</span>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+  document.querySelector(".navigationStart").classList.add("hide");  
+  const nav = document.getElementById("myNav");
+  nav.classList.add("open");
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+  document.querySelector(".navigationStart").classList.remove("hide");
+  const nav = document.getElementById("myNav");
+  nav.classList.remove("open");
+}
+</script>
+<main>
+  <img src="images/csitclouds.jpg" alt="Soft pink and blue clouds fill the sky over a distant horizon">
+  <h2>Description</h2>
+  <p>This image is a JPG of clouds over a distant horizon. The pink color looks beautiful against the blue sky.</p>
+
+  <h2>File Type</h2>
+  <p><strong>Type:</strong> JPG – good for photographs and gradients.</p>
+
+  <h2>Why I Chose It</h2>
+  <p>
+   I chose this image because I love the colors that sunsets make in the sky. And it was free
+  </p>
+
+  <h2>Source</h2>
+  <p>
+    <a href="https://www.flickr.com/photos/nicholas_t/20865582671" target="_blank" rel="noopener noreferrer">Nicholas_T. (2015). Amassed: Cumulonimbus cloud at dusk [Photograph]. Flickr. https://www.flickr.com/photos/nicholas_t/20865582671</a>
+  </p>
+</main>
+<footer>
+  <p>Lab 04 – Visual Media Lab.</p>
+</footer>
+</body>
+</html>
+
+

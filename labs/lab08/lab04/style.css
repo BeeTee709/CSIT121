@@ -1,0 +1,113 @@
+body {
+  background: #0b1020 url("images/real4background.png") no-repeat center center fixed;
+  background-size: cover; 
+  background-attachment: fixed;
+  margin: 0;
+  font-family: system-ui, sans-serif;
+    color: #f7fafc;
+}
+
+main {
+  max-width: 900px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+
+header, footer {
+font-size: 1.25rem;
+  text-align: center;
+  padding: 1rem;;
+}
+
+img {
+  max-width: 400px;
+  height: auto;
+  border: 2px solid aliceblue;
+}
+#CSITSwiral {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+#float-img{
+  float: left;
+  margin-right: 1rem;
+}
+nav a, link, a {
+    color: aliceblue;
+    padding:20px;
+}
+article {
+    align-content: center;
+    text-align: center;
+}
+subtitle {
+    font-size: .75rem;
+    color: white;
+    font-style: italic;
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 1px;
+}
+/* Style for Lab 8, update of lab 4 (Interactive Navigation) */
+.overlay {
+  height: 0%;
+  width: 20%;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background: rgb(4, 4, 30,80);
+  overflow-y: hidden;
+  transform: translateY(-100%);
+ transition: transform 0.5s ease;
+}
+
+.overlay.open {
+
+  transform: translateY(0);
+}
+
+.closebutton {
+  
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  font-size: 60px;
+  color: var(--accent);
+  position:absolute;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: left;
+}
+
+.overlay-content a {
+  display: block;
+  margin: 20px;
+  font-size: 1.5rem;
+  color: var(--text);
+}
+
+.overlay-content a:hover {
+  color: red
+}
+
+.navigationStart {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    position: relative;
+    z-index:2000;
+
+}
+
+.navigationStart.hide {
+    transform: translateY(100vh);
+    opacity: 0;
+}

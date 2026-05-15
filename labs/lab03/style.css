@@ -1,0 +1,30 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: #0b1020;
+  color: #f7fafc;
+  margin: 0;
+  padding: 1.5rem;
+}
+
+h1,
+h2,
+h3 {
+  color: #63b3ed;
+}
+
+p {
+  max-width: 60ch;
+}
+
+a {
+  color: #4fd1c5;
+}
+
+#intro {
+  border-left: 4px solid #4fd1c5;
+  padding-left: 0.75rem;
+}
+
+.blog-post {
+  margin-bottom: 1.25rem;
+}

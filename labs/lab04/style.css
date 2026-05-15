@@ -1,0 +1,49 @@
+body {
+  background: #0b1020 url("images/real4background.png") no-repeat center center fixed;
+  background-size: cover; 
+  background-attachment: fixed;
+  margin: 0;
+  font-family: system-ui, sans-serif;
+    color: #f7fafc;
+}
+
+main {
+  max-width: 900px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+
+header, footer {
+font-size: 1.25rem;
+  text-align: center;
+  padding: 1rem;;
+}
+
+img {
+  max-width: 400px;
+  height: auto;
+  border: 2px solid aliceblue;
+}
+
+#float-img{
+  float: left;
+  margin-right: 1rem;
+}
+nav a, link, a {
+    color: aliceblue;
+    padding:20px;
+}
+article {
+    align-content: center;
+    text-align: center;
+}
+subtitle {
+    font-size: .75rem;
+    color: white;
+    font-style: italic;
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 1px;
+}

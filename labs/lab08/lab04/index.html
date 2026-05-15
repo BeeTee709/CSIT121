@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab 08 – Interactive Navigation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebutton" onclick="closeNav()">&times;</a>
+
+  <div class="overlay-content">
+   <a href="../../../labs.html">Labs</a>
+    <a href="image1.html">Pg. Image 1</a> 
+    <a href="image2.html">Pg. Image 2</a> 
+    <a href="image3.html">Pg. Image 3</a>
+  </div>
+
+    </div>
+<span class="navigationStart" onclick="openNav()">&#9776; Navigation</span>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+  document.querySelector(".navigationStart").classList.add("hide");  
+  const nav = document.getElementById("myNav");
+  nav.classList.add("open");
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+  document.querySelector(".navigationStart").classList.remove("hide");
+  const nav = document.getElementById("myNav");
+  nav.classList.remove("open");
+}
+</script>
+
+<header>
+  <h1>Lab 08 (update of lab4) – Visual Media</h1>
+</header>
+<main>
+    <subtitle> Headings link to Mozilla.org definitions and further information </subtitle>
+    <h1>Overview</h1>
+  <p>
+    This page and subpages showcase three different image formats (.jpg, .png, .gif) with descriptions, file type
+    information, and sources.
+  </p>
+  <h2><a href="https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Formats/Image_types#jpeg_joint_photographic_experts_group_image"
+     target="_blank" rel="noopener noreferrer">.JPG</a></h2>
+  <p>JPG is a compressed image format that is ideal for photographs and images with many colors.</p>
+    <h2><a href="https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Formats/Image_types#png_portable_network_graphics"
+         target="_blank" rel="noopener noreferrer">.PNG</a></h2>
+    <p>PNG is a lossless image format that supports transparency and is ideal for graphics, logos, and images with sharp edges.</p>
+    <h2><a href="https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Formats/Image_types#gif_graphics_interchange_format"
+         target="_blank" rel="noopener noreferrer">.GIF</a></h2>
+    <p>GIF is a lossless image format that supports animation, although the color quality is limited so it is ideal for simple graphics and 
+        short animations.</p>
+</main>
+<article>
+    <h2> Reflection (Lab 08)</h2>
+    <p> 
+        This lab was about learning how to use an implement interactive meuns, when I was originally making lab4 I remember thinking that the navigation could be improved. Since I 
+        have learned a little more about JavaScript I thought it could be cool to add an animation to my navigation pop up. I chose to make a Full-screen overlay to showcase this new skill.
+
+    <p> I feel like I made it way more complicated than it needed to be but I got the words "Navigation" to move all the way down the users screen based on the size of their screen
+        with the translateY(100vh) line. I think it looks pretty good and I found a new way to use relative units which I hadnt thought of before. 
+
+    </p>
+</article>
+<footer>
+  <p>Lab 08 – Visual Media Lab.</p>
+</footer>
+</body>
+</html>
